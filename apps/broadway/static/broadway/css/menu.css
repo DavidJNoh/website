@@ -1,0 +1,347 @@
+body{
+    font-family: Inconsolata, helvetica neue, Helvetica, Arial, sans-serif;
+    /* background-color: #c5b7a5; */
+    background: url('/static/broadway/images/backg.jpg') !important;
+
+}
+
+
+ul li {
+    list-style-type: none;
+}
+
+.heading_image{
+    /* margin-top: 100px; */
+    padding:160px 40px 100px 40px;
+}
+
+.top{
+    position: fixed;
+    z-index: 100;
+    background-color: Black;
+    opacity: 0.9;
+    /* margin-top: -100px; */
+}
+
+.nav_main{
+    margin:0px;
+    padding: 0px !important;
+
+}
+
+#list_ul{
+    margin:0px;
+    padding: 0px !important;
+
+}
+
+.list ul li{
+    display: inline-block;
+    margin: 15px 30px;
+
+}
+
+.list ul li a{
+    color: black;
+    font-weight: 700;
+}
+
+.top ul li{
+    display: inline-block;
+    margin: 15px 70px;
+
+}
+
+.top ul li a{
+    color: white;
+    font-weight: 700;
+}
+
+.logo img{
+    width:380px;
+    height: auto;
+}
+.fancy {
+    line-height: 30%;
+    text-align: center;
+  }
+    .fancy span {
+    display: inline-block;
+    position: relative;  
+    }
+    .fancy span:before,
+    .fancy span:after {
+        content: "";
+        position: absolute;
+        height: 5px;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+        top: 0;
+        width: 160%;
+    }
+    .fancy span:before {
+        right: 100%;
+        margin-right: 15px;
+    }
+    .fancy span:after {
+        left: 100%;
+        margin-left: 15px;
+    }
+
+.subtitle_box{
+    padding: 0 100 0 100px;
+    margin: 0 67 67px;
+    height: 58px;
+}
+
+.subtitle{
+     font-family: 'Courier New', Courier, monospace;
+     font-size: 30px;
+}
+
+.menulist li {
+    border-bottom: 1px solid black;
+    position: relative;
+    padding: 20px 130px 20px 0;
+    min-height: 120px
+}
+
+.menulist .price {
+    position: absolute;
+    top: 9px;
+    right: 0;
+    font-family: abril fatface, Georgia, times new roman, Times, serif;
+    font-size: 2.6em;
+    color: #aa7b16
+}
+
+.menulist .price sup {
+    font-size: .4em; 
+    top: -1.4em
+}
+
+.menulist li h3 {
+    text-transform: uppercase;
+    font-size: 1.4em
+}
+
+.menulist li p {
+    margin-bottom: 0
+}
+
+.footer{
+    display: block;
+    background-color: #262626;
+    margin-left: none !important;
+    margin-right: none !important;
+    padding-top: 40px;
+}
+
+.footer p{
+    text-transform: uppercase;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+.footer li{
+    text-transform: uppercase;
+}
+
+
+.footer li a{
+    text-decoration: none;
+    color: white;
+}
+
+body .footerSocial {
+    margin: 0 0 0 0;
+}
+body .footerSocial li {
+    display: inline-block;
+    margin: 40px; 
+}
+
+.footer ul{
+    margin-bottom: none !important;
+}
+
+.tel{
+    color: white;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+.tel span {
+    color:white;
+    margin: 15px;
+}
+
+.btn-primary{
+    background-color: rgb(226, 222, 218) !important;
+    border: black 1px solid !important;
+    color: black;;
+}
+.btn-primary:hover {
+    background-color: black !important; 
+    color: white !important;
+    -webkit-transition-duration: 0.4s !important; 
+    transition-duration: 0.4s !important;
+}
+
+
+@media only screen and (max-width: 480px){
+    .sm-noshow {
+        display: none;
+    }
+
+    .heading_image{
+        margin-top: 100px;
+        padding:160px 40px 100px 40px;
+    }
+    
+    .subtitle_box{
+        padding: 0 100 0 100px;
+        margin: 0 67 67px;
+        height: 50px;
+    }
+
+    .fancy span:after {
+        content: "";
+        position: absolute;
+        height: 5px;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+        top: 0;
+        width: 160%;
+    }
+
+    .top{
+        position: fixed;
+        z-index: 100;
+        opacity: 0.9;
+        margin-top: -100px;
+    }
+    
+    .nav-bar{
+        background-color: none;
+    }
+
+    .nav_main{
+        margin:0px;
+    }
+    
+    .top ul li{
+        display: inline-block;   
+        margin: 5px 25px; 
+    }
+    
+    .top ul li a{
+        color: white;
+        font-weight: 700;
+    }
+    .heading_image{
+        padding: 0px;
+    }
+    .heading_image img{
+        width: 100%
+    }
+
+    .showcase{
+        text-align: center;
+    }
+    .footer{
+        padding: 0px;
+    }
+    .footer li{
+        margin: 3px 10px !important;
+    }
+    .tele{
+        margin-top: 0px !important;
+    }
+
+    .menulist{
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (min-width:481px) and (max-width:1024px){
+    .fancy span:before,
+    .fancy span:after {
+        content: "";
+        position: absolute;
+        height: 5px;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+        top: 0;
+        width: 200%;
+    }
+}
+
+
+
+
+/* latin-ext */
+@font-face {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Abril Fatface'), local('AbrilFatface-Regular'), url(https://fonts.gstatic.com/s/abrilfatface/v9/zOL64pLDlL1D99S8g8PtiKchq-lmjcDidBeT5g.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Abril Fatface'), local('AbrilFatface-Regular'), url(https://fonts.gstatic.com/s/abrilfatface/v9/zOL64pLDlL1D99S8g8PtiKchq-dmjcDidBc.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* vietnamese */
+  @font-face {
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Inconsolata Regular'), local('Inconsolata-Regular'), url(https://fonts.gstatic.com/s/inconsolata/v16/QldKNThLqRwH-OJ1UHjlKGlW5qhExfHwNJU.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Inconsolata Regular'), local('Inconsolata-Regular'), url(https://fonts.gstatic.com/s/inconsolata/v16/QldKNThLqRwH-OJ1UHjlKGlX5qhExfHwNJU.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Inconsolata Regular'), local('Inconsolata-Regular'), url(https://fonts.gstatic.com/s/inconsolata/v16/QldKNThLqRwH-OJ1UHjlKGlZ5qhExfHw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* vietnamese */
+  @font-face {
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Inconsolata Bold'), local('Inconsolata-Bold'), url(https://fonts.gstatic.com/s/inconsolata/v16/QldXNThLqRwH-OJ1UHjlKGHiw71m5_zaDpwm80E.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Inconsolata Bold'), local('Inconsolata-Bold'), url(https://fonts.gstatic.com/s/inconsolata/v16/QldXNThLqRwH-OJ1UHjlKGHiw71n5_zaDpwm80E.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Inconsolata';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Inconsolata Bold'), local('Inconsolata-Bold'), url(https://fonts.gstatic.com/s/inconsolata/v16/QldXNThLqRwH-OJ1UHjlKGHiw71p5_zaDpwm.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }

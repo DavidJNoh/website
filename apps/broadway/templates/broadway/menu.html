@@ -1,0 +1,538 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Talk of Broadway</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Talk of Broadway">
+		<meta name="theme-color" content="#000000">
+
+        <link rel="shortcut icon" href="/favicon.ico">
+		<link rel="icon" sizes="16x16 32x32 64x64" href="https://cdn-images-1.medium.com/max/2000/1*QpBJ5ELrWbCoIQSg9d3_0w.jpeg">
+		<link rel="icon" type="image/png" sizes="196x196" href="https://cdn-images-1.medium.com/max/2000/1*QpBJ5ELrWbCoIQSg9d3_0w.jpeg">
+		<link rel="icon" type="image/png" sizes="160x160" href="https://cdn-images-1.medium.com/max/2000/1*QpBJ5ELrWbCoIQSg9d3_0w.jpeg">
+		<link rel="icon" type="image/png" sizes="96x96" href="https://cdn-images-1.medium.com/max/2000/1*QpBJ5ELrWbCoIQSg9d3_0w.jpeg">
+		<link rel="icon" type="image/png" sizes="64x64" href="https://cdn-images-1.medium.com/max/2000/1*QpBJ5ELrWbCoIQSg9d3_0w.jpeg">
+		<link rel="icon" type="image/png" sizes="32x32" href="https://cdn-images-1.medium.com/max/2000/1*QpBJ5ELrWbCoIQSg9d3_0w.jpeg">
+		<link rel="icon" type="image/png" sizes="16x16" href="https://cdn-images-1.medium.com/max/2000/1*QpBJ5ELrWbCoIQSg9d3_0w.jpeg">
+
+        {% load static %}
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700|Abril+Fatface' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="{% static '/broadway/css/menu.css' %}">
+		
+<link rel="canonical" href="http://talkofbroadway.com/" />
+<style>
+    </style>
+    </head>
+    <body> 
+        <nav class="top container-fluid text-center nav-bar">
+            <ul class="nav_main">
+                <li><a href="/">Welcome</a></li>
+                <li><a href="/menu">Menu</a></li>
+                <li><a href="/hours">Hours</a></li>
+            </ul>
+        </nav>
+        <div class="container heading_image mx-auto">
+            <center><img src="{%  static '/broadway/images/translogoblack.png' %}" alt="Talk of Brodway"></center>
+        </div>
+        <div class="container subtitle_box">
+            <p class="subtitle fancy"><span>Menu</span></p>        
+        </div>
+
+        <nav class="menu_button container text-center list">
+            <ul id="list_ul">
+                <li><a href="#full_menu"><button type="button" class="btn btn-primary">Full Menu PDF</button></a></li>
+                <li><a href="#early"><button type="button" class="btn btn-primary">Early Weekday Breakfast Special</button></a></li>
+                <li><a href="#eggs"><button type="button" class="btn btn-primary">Eggs/Specials</button></a></li>
+                <li><a href="#pancakes"><button type="button" class="btn btn-primary">Pancakes/Grill</button></a></li>
+                <li><a href="#omelettes"><button type="button" class="btn btn-primary">Omelettes</button></a></li>
+                <li><a href="#sandwiches"><button type="button" class="btn btn-primary">Sandwiches</button></a></li>
+                <li><a href="#salad"><button type="button" class="btn btn-primary">Salad</button></a></li>
+                <li><a href="#lunch"><button type="button" class="btn btn-primary">Lunch Special</button></a></li>
+            </ul>
+        </nav>
+
+        <div id="wrapper">
+            <div id="content" class="container">           
+            </div>
+        </div>
+        <div id="full_menu" class="hide container">
+            {% load static %}
+            <img src="{% static '/broadway/images/menupdf.jpg' %}" alt="Talk of Brodway">
+        </div>
+        <div id="early" class="hide container">
+            <div class="menu">
+                <section>
+                <div class="container">
+                    <div class="col-md-6">
+                        <ul class="menulist menulist1">
+                            <li>
+                                <h3>BUILD YOUR OWN BREAKFAST</h3>
+                                <p>Minimum 4 items, no duplicate order</p>
+                                <p class="price"><sup>$</sup>10<sup>00</sup></p>
+                            </li>
+                            <li>
+                                <h3>Add One More Item</h3>
+                                <p>Two bacon, two link sausages, two eggs, sliced tomato, sliced avocado, cottage cheese, hash browns, country potatoes, fruit cup, one pancake, one French toast or toast</p>
+                                <p class="price"><sup>$</sup>2<sup>00</sup></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </section>
+            </div>
+        </div>
+        <div id="eggs" class="hide container">
+                <div class="menu">
+                    <section>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="menulist menulist1">
+                                    <li>
+                                        <h3>Eggs bendict</h3>
+                                        <p>Two poached eggs with Canadian bacon on English muffin, topped with hollandaise sauce</p>
+                                        <p class="price"><sup>$</sup>13<sup>00<sup></p>
+                                    </li>
+                                    <li>
+                                        <h3>Eggs Florentine</h3>
+                                        <p>Sauteed spinach & two poached eggs on English muffin, topped with hollandaise sauce</p>
+                                        <p class="price"><sup>$</sup>12<sup>00</sup></p>
+                                    </li>
+                                    <li>
+                                        <h3>Crab Benedict</h3>
+                                        <p>Crab meat, spinach, two poached eggs on English muffin with hollandaise sauce</p>
+                                        <p class="price"><sup>$</sup>15<sup>00</sup></p>
+                                    </li>
+                                    <li>
+                                        <h3>Lisa's Benedict</h3>
+                                        <p>Sauteed spinach, two poached eggs & Canadian bacon on English muffin without hollandaise sauce</p>
+                                        <p class="price"><sup>$</sup>13<sup>00</sup></p>
+                                    </li>
+                                    <li>
+                                        <h3>Eggs blackstone</h3>
+                                        <p>Two poached eggs, grilled tomatoes & regular bacon English muffin with hollandaise sauce</p>
+                                        <p class="price"><sup>$</sup>13<sup>00</sup></p>
+                                    </li>
+                                    <li>
+                                        <h3>Asparagus blackstone</h3>
+                                        <p>Two poached eggs, asparagus & regular bacon English muffin with hollandaise sauce</p>
+                                        <p class="price"><sup>$</sup>15<sup>00</sup></p>
+                                    </li>
+                                </ul>
+    
+                                </div>
+                                <div class="col-md-6">
+                                <ul class="menulist menulist2"> 
+                                    <li>
+                                        <h3>Loco Moco</h3>
+                                        <p>Rice, hamburger steak & egg with brown gravy</p>
+                                        <p class="price"><sup>$</sup>13<sup>00</sup></p>
+                                    </li>
+                                    <li>
+                                        <h3>Breakfast Burrito</h3>
+                                        <p>Bacon, sausage or chorizo with bell pepper, onions, homemade hashbrowns and cheddar cheese inside a flor tortilla || toast not included</p>
+                                        <p class="price"><sup>$</sup>13<sup>00</sup></p>
+                                    </li>
+                                    <li>
+                                        <h3>Ham, italian sausage, linguica or cajun sausage with two eggs</h3>
+                                        <p class="price"><sup>$</sup>12<sup>50</sup></p>
+                                    </li>
+                                    <li>
+                                        <h3>Hamburger steak with two eggs</h3>
+                                        <p>8 oz. niman ranch ground beef</p>
+                                        <p class="price"><sup>$</sup>13<sup>00</sup></p>
+                                    </li>
+                                                                <li>
+                                        <h3>Steak with two eggs</h3>
+                                        <p>8 oz. steak</p>
+                                        <p class="price"><sup>$</sup>17<sup>00</sup></p>
+                                    </li>
+                                                                <li>
+                                        <h3>Chicken Fried steak</h3>
+                                        <p>With homemade country gravy</p>
+                                        <p class="price"><sup>$</sup>14<sup>50</sup></p>
+                                    </li>
+                                                                <li>
+                                        <h3>breakfast sandwich</h3>
+                                        <p>With two eggs any style, bacon or ham and fruit ||no potatoes</p>
+                                        <p class="price"><sup>$</sup>14<sup>50</sup></p>
+                                    </li>
+                                </ul>
+                                </div>
+                                <p>More on the full menu.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+        </div>
+        <div id="pancakes" class="hide container">
+            <div class="menu">
+                <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="menulist menulist1">
+                                <li>
+                                    <h3>Buttermilk Pancakes</h3>
+                                    <p class="price"><sup>$</sup>8<sup>00<sup></p>
+                                </li>
+                                <li>
+                                    <h3>Blueberry pancakes</h3>
+                                    <p class="price"><sup>$</sup>10<sup>00</sup></p>
+                                </li>
+                                <li>
+                                    <h3>Sweet Potato pancakes</h3>
+                                    <p class="price"><sup>$</sup>10<sup>00</sup></p>
+                                </li>
+                                <li>
+                                    <h3>banana walnut pancakes</h3>
+                                    <p class="price"><sup>$</sup>10<sup>00</sup></p>
+                                </li>
+                                <li>
+                                    <h3>whole wheat & honey pancakes</h3>
+                                    <p class="price"><sup>$</sup>9<sup>00</sup></p>
+                                </li>
+                                <li>
+                                    <h3>JJ's chocolate chip and & banana</h3>
+                                    <p class="price"><sup>$</sup>10<sup>00</sup></p>
+                                </li>
+                            </ul>
+                            </div>
+                            <div class="col-md-6">
+                            <ul class="menulist menulist2"> 
+                                <li>
+                                    <h3>pigs in a blanket</h3>
+                                    <p>3 buttermilk pancakes and 3 sausages</p>
+                                    <p class="price"><sup>$</sup>10<sup>00</sup></p>
+                                </li>
+                                <li>
+                                    <h3>French Toast</h3>
+                                    <p class="price"><sup>$</sup>9<sup>00</sup></p>
+                                </li>
+                                <li>
+                                    <h3>Plain Waffle</h3>
+                                    <p class="price"><sup>$</sup>8<sup>00</sup></p>
+                                </li>
+                                <li>
+                                    <h3>with two eggs add</h3>
+                                    <p class="price"><sup>$</sup>2<sup>00</sup></p>
+                                </li>
+                                                            <li>
+                                    <h3>with four bacon aor sausage add</h3>
+                                    <p class="price"><sup>$</sup>5<sup>00</sup></p>
+                                </li>
+                                                            <li>
+                                    <h3>With fresh fruit add</h3>
+                                    <p class="price"><sup>$</sup>4<sup>00</sup></p>
+                                </li>
+                                                            <li>
+                                    <h3>with strawberries (seasonal) add</h3>
+                                    <p class="price"><sup>$</sup>5<sup>00</sup></p>
+                                </li>
+                            </ul>
+                            </div>
+                            <p>More on the full menu.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div id="omelettes" class="hide container">
+            <div class="menu">
+                <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="menulist">
+                                <li>
+                                    <h3>DENVER OMELETTE</h3>
+                                    <p>The good old ham, bell pepper, onions and cheese</p>
+                                    <p class="price"><sup>$</sup>13<sup>00</sup></p>
+                                </li>
+                                                            <li>
+                                    <h3>ALASKAN OMELETTE</h3>
+                                    <p>Ham, bacon, bell pepper, onions, tomatoes and cheese</p>
+                                    <p class="price"><sup>$</sup>14<sup>00</sup></p>
+                                </li>
+                                <li>
+                                    <h3>MEXICAN OMELETTE</h3>
+                                    <p>Jalapeno, onions, tomatoes and cheese</p>
+                                    <p class="price"><sup>$</sup>12<sup>00</sup></p>
+                                </li>
+                                <li>
+                                    <h3>Veggie Crepes</h3>
+                                    <p>Fresh steamed vegetables topped with sour cream</p>
+                                    <p class="price"><sup>$</sup>12<sup>00</sup></p>
+                                </li>
+                                <li>
+                                    <h3>Broadway Crepes</h3>
+                                    <p>Baby shrimp and avocado with cheese topped with Hollandaise sauce</p>
+                                    <p class="price"><sup>$</sup>13<sup>00</sup></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="menulist">
+                                <li>
+                                    <h3>TEXAS OMELETTE</h3>
+                                    <p>Fresh chili with beans, onions and cheese</p>
+                                    <p class="price"><sup>$</sup>13<sup>00</sup></p>
+                                </li>
+                                <li>
+                                    <h3>FARMHOUSE OMELETTE</h3>
+                                    <p>Ground beef, zucchini, onions, bell pepper, mushrooms, tomatoes and cheese</p>
+                                    <p class="price"><sup>$</sup>13<sup>50</sup></p>
+                                </li>
+                                <li>
+                                    <h3>CHEF'S OMELETTE</h3>
+                                    <p>Ham, sausage, bacon, onions, mushrooms and cheese</p>
+                                    <p class="price"><sup>$</sup>14<sup>50</sup></p>
+                                </li>
+                                <li>
+                                    <h3>Chef's Crepes</h3>
+                                    <p>Ham, sausage, bacon, onions, mushrooms and cheese topped with sour cream</p>
+                                    <p class="price"><sup>$</sup>14<sup>50</sup></p>
+                                </li>
+                                                            <li>
+                                    <h3>FRESH FRUIT CREPES</h3>
+                                    <p>Seasonal fresh fruits topped with whipped cream || no side                                   </p>
+                                    <p class="price"><sup>$</sup>12<sup>00</sup></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <p>More on the full menu.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div id="sandwiches" class="hide container">
+            <div class="menu">
+                <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="menulist">
+                                <li>
+                                    <h3>egg salad sandwich</h3>
+                                    <p class="price"><sup>$</sup>9<sup>00</sup></p>
+                                </li>
+                                                            <li>
+                                    <h3>tuna salad sandwich</h3>
+                                    <p class="price"><sup>$</sup>10<sup>00</sup></p>
+                                </li>
+                                <li>
+                                    <h3>turkey sandwich</h3>
+                                    <p>With cranberry sauce</p>
+                                    <p class="price"><sup>$</sup>12<sup>00</sup></p>
+                                </li>
+                                <li>
+                                    <h3>BLT</h3>
+                                    <p>Bacon, lettuce and tomato</p>
+                                    <p class="price"><sup>$</sup>12<sup>00</sup></p>
+                                </li>
+                                <li>
+                                    <h3>Salmon BLTA</h3>
+                                    <p>Sserved on 9-grain bread</p>
+                                    <p class="price"><sup>$</sup>13<sup>00</sup></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="menulist">
+                                <li>
+                                    <h3>Tuna melt</h3>
+                                    <p>Grilled tuna salad on rye with Swiss cheese</p>
+                                    <p class="price"><sup>$</sup>13<sup>00</sup></p>
+                                </li>
+                                <li>
+                                    <h3>Vegetarian Sandwich</h3>
+                                    <p>Avocado, tomatoes, cucumber and jack cheese</p>
+                                    <p class="price"><sup>$</sup>10<sup>00</sup></p>
+                                </li>
+                                <li>
+                                    <h3>GRILLED CHEESE</h3>
+                                    <p>With your choice of cheese, add avocado or bacon for $3</p>
+                                    <p class="price"><sup>$</sup>8<sup>00</sup></p>
+                                </li>
+                                <li>
+                                    <h3>blackened chicken sandwich</h3>
+                                    <p>Served on sourdough with pepper jack cheese, roasted pepper, caramelized onions, avocado and chipotle aoli</p>
+                                    <p class="price"><sup>$</sup>13<sup>00</sup></p>
+                                </li>
+                                                            <li>
+                                    <h3>Philly cheesesteak sandwich</h3>
+                                    <p>Rib eye with bell peppers and onions                                   </p>
+                                    <p class="price"><sup>$</sup>14<sup>00</sup></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <p>More on the full menu.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div id="salad" class="hide container">
+            <div class="menu">
+                <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="menulist">
+                                <li>
+                                    <h3>house salad</h3>
+                                    <p class="price"><sup>$</sup>8<sup>00</sup></p>
+                                </li>
+                                                            <li>
+                                    <h3>add chicken</h3>
+                                    <p class="price"><sup>$</sup>3<sup>00</sup></p>
+                                </li>
+                                <li>
+                                    <h3>add tuna salad</h3>
+                                    <p class="price"><sup>$</sup>4<sup>00</sup></p>
+                                </li>
+                                <li>
+                                    <h3>add salmon</h3>
+                                    <p class="price"><sup>$</sup>7<sup>00</sup></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="menulist">
+                                <li>
+                                    <h3>chicken caesar salad</h3>
+                                    <p>Romaine lettuce with fresh parmesan cheese & croutons tossed with homemade Caesar dressing</p>
+                                    <p class="price"><sup>$</sup>12<sup>00</sup></p>
+                                </li>
+                                <li>
+                                    <h3>Spinach Salad</h3>
+                                    <p>Fresh spinach with cripsy bacon, mushrooms, hard-boiled egg and red onion</p>
+                                    <p class="price"><sup>$</sup>12<sup>00</sup></p>
+                                </li>
+                                <li>
+                                    <h3>Cobb salad</h3>
+                                    <p>Turkey breast, bacon, hard boiled eggs, tomatoes and avocado</p>
+                                    <p class="price"><sup>$</sup>14<sup>00</sup></p>
+                                </li>
+                                <li>
+                                    <h3>Summer salad</h3>
+                                    <p>Chicken breast, diced cucumbers, tomatoes, cilantro, tortilla chips with our house made ranch dressing</p>
+                                    <p class="price"><sup>$</sup>12<sup>00</sup></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <p>More on the full menu.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div id="lunch" class="hide container">
+            <div class="menu">
+                <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="menulist">
+                                <li>
+                                    <h3>Hamburger</h3>
+                                    <p>Our 1/3 pound Niman Ranch burgers are served with choice of French fries, coleslaw, potato salad or small salad || Substitute fresh fruit cup $ 1 extra</p>
+                                    <p class="price"><sup>$</sup>10<sup>00</sup></p>
+                                </li>
+                                                            <li>
+                                    <h3>chili cheeseburger</h3>
+                                    <p>Fresh chili with beans, cheese and onions</p>
+                                    <p class="price"><sup>$</sup>13<sup>00</sup></p>
+                                </li>
+                                <li>
+                                    <h3>miguel's jalapeno burger</h3>
+                                    <p>Deep fried jalapeno, cheese and avocado</p>
+                                    <p class="price"><sup>$</sup>13<sup>00</sup></p>
+                                </li>
+                                <li>
+                                    <h3>Half-pound cheeseburger</h3>
+                                    <p>Served on a French roll</p>
+                                    <p class="price"><sup>$</sup>13<sup>00</sup></p>
+                                </li>
+                                <li>
+                                    <h3>Patty Melt</h3>
+                                    <p>Marble rye with Swiss cheese & grilled onions</p>
+                                    <p class="price"><sup>$</sup>12<sup>00</sup></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="menulist">
+                                <li>
+                                    <h3>Fresh Fish and chips</h3>
+                                    <p>Fresh battered tilapia with tartar sauce or malt vinegar</p>
+                                    <p class="price"><sup>$</sup>12<sup>00</sup></p>
+                                </li>
+                                <li>
+                                    <h3>Grilled chicken teriyaki plate</h3>
+                                    <p>Chicken breast with homemade teriyaki sauce, rice and salad</p>
+                                    <p class="price"><sup>$</sup>11<sup>00</sup></p>
+                                </li>
+                                <li>
+                                    <h3>Chicken quesadilla</h3>
+                                    <p>With chicken breast, onion bell pepper, cheddar cheese</p>
+                                    <p class="price"><sup>$</sup>12<sup>00</sup></p>
+                                </li>
+                                <li>
+                                    <h3>Spaghetti plate</h3>
+                                    <p>Served with meat sauce, garlic bread and soup or salad</p>
+                                    <p class="price"><sup>$</sup>11<sup>00</sup></p>
+                                </li>
+                                                            <li>
+                                    <h3>Fish Taco plate</h3>
+                                    <p>Grilled tilapia, corn tortillas, served with avocado, salsa and coleslaw</p>
+                                    <p class="price"><sup>$</sup>12<sup>00</sup></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <p>More on the full menu.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+        <script>
+
+
+        $(document).ready(function() {
+            $("div.hide").hide()
+            $("#list_ul a").click(function(e) {
+                e.preventDefault();
+                console.log("hello")
+                var item = this.href.split("#")[1];
+                $("#content").slideUp(function() {
+                    $(this).empty().append($("#" + item).clone().show()).slideDown();
+                });
+            });
+        });
+        </script>
+    </body>
+    <footer>
+    <div class="text-center footer">
+                <p>
+                2096 Broadway St<br/>
+                Redwood City, CA 94063
+                </p>
+        <p class="tele"><a href="tel:6503683295" class="tel" target="_blank">650<span>.</span>368<span>.</span>3295</a></p>
+        <ul class="list-unstyled footerSocial">
+            <li><a href="https://www.yelp.com/biz/talk-of-broadway-redwood-city" target="_blank" class="linkHover"><span>Yelp</span></a></li>
+            <li><a href="https://www.google.com/search?q=talk+of+braodway&oq=talk+of+braodway&aqs=chrome..69i57j0l5.1566j0j9&sourceid=chrome&ie=UTF-8#lrd=0x808fa3acd302e47d:0x8147edd3e1da8e57,1,,," target="_blank" class="linkHover"><span>Google</span></a></li>
+            <li><a href="https://www.tripadvisor.com/Restaurant_Review-g32956-d4275945-Reviews-Talk_of_Broadway-Redwood_City_California.html" target="_blank" class="linkHover"><span>TripAdvisor</span></a></li>
+            <li><a href="https://www.zomato.com/redwood-city-ca/talk-of-broadway-redwood-city/menu" target="_blank" class="linkHover"><span>Zomato</span></a></li>
+        </ul>
+    </div>
+</html>
