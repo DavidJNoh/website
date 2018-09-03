@@ -29,15 +29,29 @@ body{
     padding:0 20px;
     color: #0f0c0c;
     background: url('/static/broadway/images/show.jpeg') no-repeat !important;
-    
+    font-family: inherit;    
 }
 
 .showcase h1{
-    font-size: 60px;
+    font-size: 50px;
 } 
 
 .showcase p{
-    font-size: 30px;
+    font-size: 23px;
+}
+
+.showcase  a img{
+    width: 20%;
+    margin-top: 10%;
+    /* margin-left: 38%; */
+}
+
+.showcase hr{
+    height: 0.5px;
+    color: black;
+    background-color: black;
+    border: solid 0.3px black;
+    width: 60%;
 }
 
 .showcase button{
@@ -383,6 +397,13 @@ body .footerSocial li {
     .showcase{
         text-align: center;
     }
+
+    .showcase  a img{
+        width: 20%;
+        margin-top: 10%;
+        margin-left: 0%;
+    }
+
     .footer{
         padding: 0px;
     }
