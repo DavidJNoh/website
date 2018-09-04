@@ -93,10 +93,14 @@
                     </p>
             <p class="tele"><a href="tel:6503683295" class="tel" target="_blank">650<span>.</span>368<span>.</span>3295</a></p>
             <ul class="list-unstyled footerSocial">
-                <li><a href="https://www.yelp.com/biz/talk-of-broadway-redwood-city" target="_blank" class="linkHover"><span>Yelp</span></a></li>
-                <li><a href="https://www.google.com/search?q=talk+of+braodway&oq=talk+of+braodway&aqs=chrome..69i57j0l5.1566j0j9&sourceid=chrome&ie=UTF-8#lrd=0x808fa3acd302e47d:0x8147edd3e1da8e57,1,,," target="_blank" class="linkHover"><span>Google</span></a></li>
-                <li><a href="https://www.tripadvisor.com/Restaurant_Review-g32956-d4275945-Reviews-Talk_of_Broadway-Redwood_City_California.html" target="_blank" class="linkHover"><span>TripAdvisor</span></a></li>
-                <li><a href="https://www.zomato.com/redwood-city-ca/talk-of-broadway-redwood-city/menu" target="_blank" class="linkHover"><span>Zomato</span></a></li>
+                {% load static %}
+                <li><a href="https://www.yelp.com/biz/talk-of-broadway-redwood-city" target="_blank" class="linkHover"><img style="width:30px; margin-right:5px;" src="{% static '/broadway/images/yelp.png' %}"><span>Yelp</span></a></li>
+                {% load static %}
+                <li><a href="https://www.google.com/search?ei=i0uMW_KpNMCw0PEP0OmI8Ao&q=Talk+of+Broadway&oq=Talk+of+Broadway&gs_l=psy-ab.3..35i39l2j0l2j0i22i30l3j38.3348.7899..8093...4.0..0.113.1476.19j1......0....1..gws-wiz.......0i71j0i67j0i131j0i10i67j0i20i264j0i10j0i20i263i264j0i20i263j0i22i10i30.K9NuHRM2FEg#lrd=0x808fa3acd302e47d:0x8147edd3e1da8e57,1,,," target="_blank" class="linkHover"><img style="width:30px; margin-right:5px;" src="{% static '/broadway/images/google.png' %}"><span>Google</span></a></li>
+                {% load static %}
+                <li><a href="https://www.tripadvisor.com/Restaurant_Review-g32956-d4275945-Reviews-Talk_of_Broadway-Redwood_City_California.html" target="_blank" class="linkHover"><img style="width:30px; margin-right:5px;" src="{% static '/broadway/images/trip.png' %}"><span>TripAdvisor</span></a></li>
+                {% load static %}
+                <li><a href="https://www.zomato.com/redwood-city-ca/talk-of-broadway-redwood-city/menu" target="_blank" class="linkHover"><img style="width:30px; margin-right:5px;" src="{% static '/broadway/images/zomato.png' %}"><span>Zomato</span></a></li>
             </ul>
         </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

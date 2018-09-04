@@ -186,9 +186,10 @@ body .footerSocial li {
 
 .btn-primary{
     background-color: transparent !important;
-    border: black 1px solid !important;
+    border: black 2px solid !important;
     color: black;;
     border-radius: 0px;
+    font-weight: 600;
 }
 .btn-primary:hover {
     background-color: transparent !important; 
@@ -275,6 +276,10 @@ body .footerSocial li {
     .menulist{
         padding-left: 10px;
     }
+    .btn-primary{
+        width: auto;
+        height: auto;
+    }
 }
 
 @media only screen and (min-width:481px) and (max-width:1024px){
@@ -287,6 +292,17 @@ body .footerSocial li {
         border-top: 1px solid black;
         top: 0;
         width: 200%;
+    }
+    .btn-primary{
+        width: 140px !important;
+        height: 140px !important;
+    }
+}
+
+@media only screen and (min-width:1025px){
+    .btn-primary{
+        width: 140px !important;
+        height: 140px !important;
     }
 }
 
