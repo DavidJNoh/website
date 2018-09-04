@@ -1,7 +1,7 @@
 body{
     font-family: Inconsolata, helvetica neue, Helvetica, Arial, sans-serif;
-    background: url('/static/broadway/images/backg.jpg') !important;
-    background-size: cover !important;
+    /* background: url('/static/broadway/images/woodlast.jpg') !important; */
+    /* background-size: cover !important; */
 }
 
 
@@ -187,7 +187,7 @@ body .footerSocial li {
 .btn-primary{
     background-color: transparent !important;
     border: black 2px solid !important;
-    color: black;;
+    color: black;
     border-radius: 0px;
     font-weight: 600;
 }
