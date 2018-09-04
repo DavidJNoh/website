@@ -1,7 +1,7 @@
 body{
     font-family: Inconsolata, helvetica neue, Helvetica, Arial, sans-serif;
     background: url('/static/broadway/images/backg.jpg') !important;
-
+    background-size: cover !important;
 }
 
 
